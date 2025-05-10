@@ -1,11 +1,11 @@
 steps:
-  - name: 'python'
+  - name: 'python:3.9'
     entrypoint: 'python'
     args: ['-m', 'pip', 'install', '--upgrade', 'pip']
-  - name: python
+  - name: 'python3.9'
     entrypoint: python
     args: ['-m', 'pip', 'install', 'build', 'pytest', 'Flask', '--user']
-  - name: 'python'
+  - name: 'python:3.9'
     entrypoint: 'python'
     args: ['-m', 'build']
 artifacts:
